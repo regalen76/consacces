@@ -19,7 +19,7 @@ import java.util.*
 @Suppress("SqlSourceToSinkFlow")
 abstract class BaseRepository {
 
-    val logger: Logger = LoggerFactory.getLogger(this.javaClass)
+    protected val logger: Logger = LoggerFactory.getLogger(this.javaClass)
 
     @Autowired
     lateinit var jdbcTemplate:JdbcTemplate
